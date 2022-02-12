@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+            minHeight: {
+            '80vh': '80vh'
+            },
+
+            height: {
+                '20vh': '20vh'  
+            },
+
+
+        }
+      }
+    }
+  </script>
+
+<style type="text/tailwindcss">
+    @layer utilities {
+    
+    }
+  </style>
+
+  <title>A Basic HTML5 Template</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="//Insert img here//">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>🤡</text></svg>" />
+  <link rel="stylesheet" href="style.css">
+  <link rel = "apple-touch-icon" href = "touch-icon-iphone.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="text-slate-900">
+
+<div class="colors min-h-80vh flex text-gray-400">
+
+    <div class="color min-h-80vh flex flex-1 flex-col items-center justify-evenly relative overflow-hidden">
+        <h2>Hex</h2>
+        <div class="controls flex flex-col">
+            <button class="adjust text-md cursor-pointer my-2"><i class="fas fa-sliders-h"></i></button>
+            <button class="lock text-md cursor-pointer my-2"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders flex flex-col absolute bottom-0 w-4/5 rounded-t-lg bg-white p-4 pointer-events-none">
+            <button class="close-adjustements absolute top-0 right-0 px-[0.5rem] cursor-pointer font-semibold rounded-bl-lg rounded-tl-lg bg-gray-200">x</button>
+            <span>Hue</span>
+            <input type="range"min="0" max="360" step="1" name="hue" class="hue-input" data-hue="0">
+            <span>Brightness</span>
+            <input type="range" min="0" max="1" step="0.01" name="brightness" class="bright-input" data-bright="0">
+            <span>Saturation</span>
+            <input type="range" min="0" max="1" step="0.01" name="saturation" class="sat-input" data-saturation="0">
+    </div>
+    </div>
+    <div class="color min-h-80vh flex flex-1 flex-col items-center justify-evenly relative overflow-hidden">
+        <h2>Hex</h2>
+        <div class="controls flex flex-col">
+            <button class="adjust text-md cursor-pointer my-2"><i class="fas fa-sliders-h"></i></button>
+            <button class="lock text-md cursor-pointer my-2"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders flex flex-col absolute bottom-0 w-4/5 rounded-t-lg bg-white p-4 pointer-events-none">
+            <button class="close-adjustements absolute top-0 right-0 px-[0.5rem] cursor-pointer font-semibold rounded-bl-lg rounded-tl-lg bg-gray-200">x</button>
+            <span>Hue</span>
+            <input type="range"min="0" max="360" step="1" name="hue" class="hue-input" data-hue="1">
+            <span>Brightness</span>
+            <input type="range" min="0" max="1" step="0.01" name="brightness" class="bright-input" data-bright="1">
+            <span>Saturation</span>
+            <input type="range" min="0" max="1" step="0.01" name="saturation" class="sat-input" data-sat="1">
+        </div>
+    </div>
+
+    <div class="color min-h-80vh flex flex-1 flex-col items-center justify-evenly relative overflow-hidden">
+        <h2>Hex</h2>
+        <div class="controls flex flex-col">
+            <button class="adjust text-md cursor-pointer my-2"><i class="fas fa-sliders-h"></i></button>
+            <button class="lock text-md cursor-pointer my-2"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders flex flex-col absolute bottom-0 w-4/5 rounded-t-lg bg-white p-4 pointer-events-none">
+            <button class="close-adjustements absolute top-0 right-0 px-[0.5rem] cursor-pointer font-semibold rounded-bl-lg rounded-tl-lg bg-gray-200">x</button>
+            <span>Hue</span>
+            <input type="range"min="0" max="360" step="1" name="hue" class="hue-input" data-hue="2">
+            <span>Brightness</span>
+            <input type="range" min="0" max="1" step="0.01" name="brightness" class="bright-input" data-bright="2">
+            <span>Saturation</span>
+            <input type="range" min="0" max="1" step="0.01" name="saturation" class="sat-input" data-sat="2">
+        </div>
+    </div>
+
+    <div class="color min-h-80vh flex flex-1 flex-col items-center justify-evenly relative overflow-hidden">
+        <h2>Hex</h2>
+        <div class="controls flex flex-col">
+            <button class="adjust text-md cursor-pointer my-2"><i class="fas fa-sliders-h"></i></button>
+            <button class="lock text-md cursor-pointer my-2"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders flex flex-col absolute bottom-0 w-4/5 rounded-t-lg bg-white p-4 pointer-events-none">
+            <button class="close-adjustements absolute top-0 right-0 px-[0.5rem] cursor-pointer font-semibold rounded-bl-lg rounded-tl-lg bg-gray-200">x</button>
+            <span>Hue</span>
+            <input type="range"min="0" max="360" step="1" name="hue" class="hue-input" data-hue="3">
+            <span>Brightness</span>
+            <input type="range" min="0" max="1" step="0.01" name="brightness" class="bright-input" data-bright="3">
+            <span>Saturation</span>
+            <input type="range" min="0" max="1" step="0.01" name="saturation" class="sat-input" data-sat="3">
+        </div>
+    </div>
+
+    <div class="color min-h-80vh flex flex-1 flex-col items-center justify-evenly relative overflow-hidden">
+        <h2>Hex</h2>
+        <div class="controls flex flex-col">
+            <button class="adjust text-md cursor-pointer my-2"><i class="fas fa-sliders-h"></i></button>
+            <button class="lock text-md cursor-pointer my-2"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders flex flex-col absolute bottom-0 w-4/5 rounded-t-lg bg-white p-4 pointer-events-none">
+            <button class="close-adjustements absolute top-0 right-0 px-[0.5rem] cursor-pointer font-semibold rounded-bl-lg rounded-tl-lg bg[0.2rem]gray-200"bl-lg rounded-tl-lg</button>
+            <span>Hue</span>
+            <input type="range"min="0" max="360" step="1" name="hue" class="hue-input" data-hue="4">
+            <span>Brightness</span>
+            <input type="range" min="0" max="1" step="0.01" name="brightness" class="bright-input" data-bright="4">
+            <span>Saturation</span>
+            <input type="range" min="0" max="1" step="0.01" name="saturation" class="sat-input" data-sat="4">
+        </div>
+    </div>
+
+</div>
+
+<div class="panel flex items-center justify-evenly h-20vh">
+    <div class="library-panel flex flex-col items-center">
+        <button class="library text-lg m-2 bg-gray-700 py-1 px-5 cursor-pointer text-white rounded-lg"><i class="fas fa-book-open"></i></button>
+        <p>Library</p>
+    </div>
+    <div class="generate-panel flex flex-col items-center">
+        <button class="generate text-lg m-2 bg-gray-700 py-1 px-5 cursor-pointer text-white rounded-lg"><i class="fas fa-sync"></i></button>
+        <p>Generate</p>
+    </div>
+        <div class="save-panel flex flex-col items-center">
+            <button class="generate text-lg m-2 bg-gray-700 py-1 px-5 cursor-pointer text-white rounded-lg"><i class="fas fa-save"></i></button>
+            <p>Save</p>
+        </div>
+    </div>
+</div>
+
+<div class="copy-container">
+    <div class="copy-popup">
+        <h3>Copied to clipboard!</h3>
+        <h4>&#128077</h4>
+    </div>
+</div>
+
+<div class="save-containers">
+    <div class="save-popup">
+        <button class="close-save">X</button>
+        <h4>Give a name to your palette</h4>
+        <input type="text" max-lenght="35" class="save-name">
+        <button type="submit" class="submit-save">Save</button>
+    </div>
+</div>
+
+<div class="library-container">
+    <div class="library-popup">
+        <button class="close-library">X</button>
+        <h4>Pick your palette</h4>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="app.js"></script>
+</body>
+</html>
