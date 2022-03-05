@@ -102,6 +102,56 @@ color h2 {
 
 
 .sliders {
-     transform: translateY(100px);
+     /* transform: translateY(100px); */
      transition: all 0.5s ease-in-out;
 }
+
+/* Slider */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  border-radius: 1rem;
+  cursor: pointer;
+  height: 12px;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid #9b9b9b;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  border: 2px solid #9b9b9b;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  border: 2px solid #9b9b9b;
+  height: 20px;
+  width: 2px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+
+
+
+
+
