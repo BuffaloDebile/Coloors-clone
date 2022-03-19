@@ -102,8 +102,10 @@ color h2 {
 
 
 .sliders {
-     /* transform: translateY(100px); */
+     transform: translateY(100px);
      transition: all 0.5s ease-in-out;
+     opacity: 0;
+     pointer-events: none;
 }
 
 /* Slider */
@@ -149,6 +151,17 @@ input[type=range]::-ms-thumb {
   background: #ffffff;
   cursor: pointer;
 }
+
+
+.copy-container.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.copy-popup.active {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
 
 
 
