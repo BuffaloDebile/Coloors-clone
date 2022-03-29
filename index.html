@@ -143,15 +143,15 @@
 
 <div class="panel flex items-center justify-evenly h-20vh">
     <div class="library-panel flex flex-col items-center">
-        <button class="library text-lg m-2 bg-gray-700 py-1 px-5 cursor-pointer text-white rounded-lg"><i class="fas fa-book-open"></i></button>
+        <button class="library text-lg m-2 bg-gray-700 hover:bg-gray-600 py-1 px-5 cursor-pointer text-white rounded-lg"><i class="fas fa-book-open"></i></button>
         <p>Library</p>
     </div>
     <div class="generate-panel flex flex-col items-center">
-        <button class="generate text-lg m-2 bg-gray-700 py-1 px-5 cursor-pointer text-white rounded-lg"><i class="fas fa-sync"></i></button>
+        <button class="generate text-lg m-2 bg-gray-700 hover:bg-gray-600 py-1 px-5 cursor-pointer text-white rounded-lg"><i class="fas fa-sync"></i></button>
         <p>Generate</p>
     </div>
         <div class="save-panel flex flex-col items-center">
-            <button class="generate text-lg m-2 bg-gray-700 py-1 px-5 cursor-pointer text-white rounded-lg"><i class="fas fa-save"></i></button>
+            <button class="save text-lg m-2 bg-gray-700 hover:bg-gray-600 py-1 px-5 cursor-pointer text-white rounded-lg"><i class="fas fa-save"></i></button>
             <p>Save</p>
         </div>
     </div>
@@ -164,12 +164,12 @@
     </div>
 </div>
 
-<div class="save-containers">
+<div class="save-container">
     <div class="save-popup">
         <button class="close-save">X</button>
         <h4>Give a name to your palette</h4>
-        <input type="text" max-lenght="35" class="save-name">
-        <button type="submit" class="submit-save">Save</button>
+        <input type="text" max-lenght="35" placeholder="My palette name" class="save-name w-3/4 h-11 text-2xl shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        <button type="submit" class="submit-save bg-gray-700 hover:bg-gray-600 text-white cursor-pointer rounded-lg m-2 py-2 px-6">Save</button>
     </div>
 </div>
 
