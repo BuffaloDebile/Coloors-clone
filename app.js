@@ -268,12 +268,28 @@ function openAdjustmentPanel(index) {
       paletteBtn.classList.add(paletteObj.nr);
       paletteBtn.innerText = 'Select';
 
+// attach event to the button 
+
+      paletteBtn.addEventListener('click', e => {
+        closeLibrary();
+        const paletteIndex = e.target.classList[1];
+        initialColors = [];
+        savedPalettes[paletteIndex].colors.forEach((color, index) => {
+            initialColors.push(color);
+            colorDivs[index].style.backgroundColor = color;
+            const text = colorDivs[index].children[0];
+            checkTextContrast(color, text);
+            updateTextUI(index);
+        });
+      });
+
 // Append to library
       palette.appendChild(title);
       palette.appendChild(preview);
       palette.appendChild(paletteBtn);
       libraryContainer.children[0].appendChild(palette);
       
+
 
   }
 
@@ -299,6 +315,8 @@ function openAdjustmentPanel(index) {
     libraryContainer.classList.remove('active');
     popup.classList.remove('active');     
 }
+
+
 
 randomColors()
 
